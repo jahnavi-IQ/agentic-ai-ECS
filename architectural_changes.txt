@@ -1,0 +1,12 @@
+4K-8K output tokens is NOT sufficient for complex enterprise tasks like generating 10+ code files. 
+This is a real limitation that production systems solve through specific architectural patterns.
+
+How Production Enterprise Tools Solve This
+1. Multi-Turn Iterative Generation (Most Common)
+Generate files across multiple API calls in sequence.
+2. Streaming with Continuation Prompts
+Generate until hitting limit, then continue from where you left off.
+3. Hierarchical Generation (How Cursor/Windsurf work)
+Generate high-level first, then drill down.
+4. Template + Fill Pattern
+Generate templates/interfaces first, then implement separately.

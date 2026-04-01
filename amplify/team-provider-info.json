@@ -1,0 +1,32 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-igpt-dev-f9102-authRole",
+      "UnauthRoleArn": "arn:aws:iam::129874388416:role/amplify-igpt-dev-f9102-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::129874388416:role/amplify-igpt-dev-f9102-authRole",
+      "Region": "us-east-1",
+      "DeploymentBucketName": "amplify-igpt-dev-f9102-deployment",
+      "UnauthRoleName": "amplify-igpt-dev-f9102-unauthRole",
+      "StackName": "amplify-igpt-dev-f9102",
+      "StackId": "arn:aws:cloudformation:us-east-1:129874388416:stack/amplify-igpt-dev-f9102/98918270-077f-11f1-aa5e-0eccda63659f",
+      "AmplifyAppId": "d2x98tnzptp51v",
+      "AuthTriggerTemplateURL": "https://s3.amazonaws.com/amplify-igpt-dev-f9102-deployment/amplify-cfn-templates/auth/auth-trigger-cloudformation-template.json"
+    },
+    "categories": {
+      "auth": {
+        "IGPTauth": {},
+        "igptAuth": {}
+      },
+      "function": {
+        "IGPTauthDefineAuthChallenge": {
+          "deploymentBucketName": "amplify-igpt-dev-f9102-deployment",
+          "s3Key": "amplify-builds/IGPTauthDefineAuthChallenge-6473355268583146356b-build.zip"
+        },
+        "IGPTauthCreateAuthChallenge": {
+          "deploymentBucketName": "amplify-igpt-dev-f9102-deployment",
+          "s3Key": "amplify-builds/IGPTauthCreateAuthChallenge-48567844767977324b58-build.zip"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,26 @@
+
+# Dependencies
+node_modules
+
+# Build outputs
+.next
+coverage
+
+# Git / editor metadata
+.git
+.gitignore
+.vscode
+.idea
+.DS_Store
+
+# Env / local files
+.env.local
+.env*.local
+
+# Logs
+npm-debug.log
+*.log
+
+# Docs
+README.md
+

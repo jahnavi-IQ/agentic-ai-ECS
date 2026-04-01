@@ -1,0 +1,19 @@
+## Test 1: Tables
+```
+Create a comparison table of React vs Vue
+```
+
+### Test 2: Mermaid Diagrams
+```
+Show me a flowchart for user authentication
+```
+
+### Test 3: Code Blocks
+```
+Write a Python function to calculate Fibonacci
+```
+### Test 4: Interpret the image
+```
+what things are available in the image?
+```
+

@@ -1,0 +1,119 @@
+{
+  "providers": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-igpt-dev-f9102-authRole",
+      "UnauthRoleArn": "arn:aws:iam::129874388416:role/amplify-igpt-dev-f9102-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::129874388416:role/amplify-igpt-dev-f9102-authRole",
+      "Region": "us-east-1",
+      "DeploymentBucketName": "amplify-igpt-dev-f9102-deployment",
+      "UnauthRoleName": "amplify-igpt-dev-f9102-unauthRole",
+      "StackName": "amplify-igpt-dev-f9102",
+      "StackId": "arn:aws:cloudformation:us-east-1:129874388416:stack/amplify-igpt-dev-f9102/98918270-077f-11f1-aa5e-0eccda63659f",
+      "AmplifyAppId": "d2x98tnzptp51v"
+    }
+  },
+  "auth": {
+    "igptAuth": {
+      "service": "Cognito",
+      "providerPlugin": "awscloudformation",
+      "dependsOn": [],
+      "customAuth": false,
+      "frontendAuthConfig": {
+        "socialProviders": [],
+        "usernameAttributes": [
+          "EMAIL",
+          "PHONE_NUMBER"
+        ],
+        "signupAttributes": [
+          "EMAIL"
+        ],
+        "passwordProtectionSettings": {
+          "passwordPolicyMinLength": 8,
+          "passwordPolicyCharacters": [
+            "REQUIRES_LOWERCASE",
+            "REQUIRES_UPPERCASE",
+            "REQUIRES_NUMBERS",
+            "REQUIRES_SYMBOLS"
+          ]
+        },
+        "mfaConfiguration": "OPTIONAL",
+        "mfaTypes": [
+          "SMS"
+        ],
+        "verificationMechanisms": [
+          "EMAIL"
+        ]
+      },
+      "providerMetadata": {
+        "s3TemplateURL": "https://s3.amazonaws.com/amplify-igpt-dev-f9102-deployment/amplify-cfn-templates/auth/IGPTauth-cloudformation-template.json",
+        "logicalId": "authigptAuth"
+      },
+      "lastPushTimeStamp": "2026-03-12T20:47:08.820Z",
+      "output": {
+        "CreatedSNSRole": "arn:aws:iam::129874388416:role/sns690b8623f9102-dev",
+        "UserPoolId": "us-east-1_BRNkfjwLN",
+        "AppClientIDWeb": "1qdnmbr84efgbdapmjgef5cc64",
+        "AppClientID": "1brqmo12rcfcha1e0cai1mrfpm",
+        "IdentityPoolId": "us-east-1:1bd55f51-dbbe-4e3d-8910-24dc814041db",
+        "UserPoolArn": "arn:aws:cognito-idp:us-east-1:129874388416:userpool/us-east-1_BRNkfjwLN",
+        "IdentityPoolName": "igptidPool__dev",
+        "UserPoolName": "igptUserPool"
+      },
+      "lastPushDirHash": "GmdnKjQ/EMDqXq5w0j0E8BP9Y7c="
+    }
+  },
+  "function": {
+    "IGPTauthDefineAuthChallenge": {
+      "build": true,
+      "providerPlugin": "awscloudformation",
+      "service": "Lambda",
+      "lastBuildTimeStamp": "2026-03-12T20:44:24.658Z",
+      "lastBuildType": "PROD",
+      "lastPackageTimeStamp": "2026-03-12T20:44:24.701Z",
+      "distZipFilename": "IGPTauthDefineAuthChallenge-6473355268583146356b-build.zip",
+      "s3Bucket": {
+        "deploymentBucketName": "amplify-igpt-dev-f9102-deployment",
+        "s3Key": "amplify-builds/IGPTauthDefineAuthChallenge-6473355268583146356b-build.zip"
+      },
+      "providerMetadata": {
+        "s3TemplateURL": "https://s3.amazonaws.com/amplify-igpt-dev-f9102-deployment/amplify-cfn-templates/function/IGPTauthDefineAuthChallenge-cloudformation-template.json",
+        "logicalId": "functionIGPTauthDefineAuthChallenge"
+      },
+      "lastPushTimeStamp": "2026-03-12T20:47:08.820Z",
+      "output": {
+        "LambdaExecutionRoleArn": "arn:aws:iam::129874388416:role/IGPTauthDefineAuthChallenge-dev",
+        "Region": "us-east-1",
+        "Arn": "arn:aws:lambda:us-east-1:129874388416:function:IGPTauthDefineAuthChallenge-dev",
+        "Name": "IGPTauthDefineAuthChallenge-dev",
+        "LambdaExecutionRole": "IGPTauthDefineAuthChallenge-dev"
+      },
+      "lastPushDirHash": "5bYRtPXYQO+FuKwHV4QLfOcYkAk="
+    },
+    "IGPTauthCreateAuthChallenge": {
+      "build": true,
+      "providerPlugin": "awscloudformation",
+      "service": "Lambda",
+      "lastBuildTimeStamp": "2026-03-12T20:44:26.361Z",
+      "lastBuildType": "PROD",
+      "lastPackageTimeStamp": "2026-03-12T20:44:26.387Z",
+      "distZipFilename": "IGPTauthCreateAuthChallenge-48567844767977324b58-build.zip",
+      "s3Bucket": {
+        "deploymentBucketName": "amplify-igpt-dev-f9102-deployment",
+        "s3Key": "amplify-builds/IGPTauthCreateAuthChallenge-48567844767977324b58-build.zip"
+      },
+      "providerMetadata": {
+        "s3TemplateURL": "https://s3.amazonaws.com/amplify-igpt-dev-f9102-deployment/amplify-cfn-templates/function/IGPTauthCreateAuthChallenge-cloudformation-template.json",
+        "logicalId": "functionIGPTauthCreateAuthChallenge"
+      },
+      "lastPushTimeStamp": "2026-03-12T20:47:08.820Z",
+      "output": {
+        "LambdaExecutionRoleArn": "arn:aws:iam::129874388416:role/IGPTauthCreateAuthChallenge-dev",
+        "Region": "us-east-1",
+        "Arn": "arn:aws:lambda:us-east-1:129874388416:function:IGPTauthCreateAuthChallenge-dev",
+        "Name": "IGPTauthCreateAuthChallenge-dev",
+        "LambdaExecutionRole": "IGPTauthCreateAuthChallenge-dev"
+      },
+      "lastPushDirHash": "TMrMr0zG0VdA3EHKbwpmJpq2wwQ="
+    }
+  }
+}
